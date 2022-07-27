@@ -1,0 +1,26 @@
+.templete {
+    max-height: 100vh;
+    background-color: rgb(231, 225, 225);
+    padding-top: 25px;
+    margin: 0 auto;
+    max-width: 520px;
+}
+
+.title {
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.info {
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.children {
+    text-align: center;
+    padding-bottom: 50px;
+}
