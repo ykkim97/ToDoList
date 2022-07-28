@@ -1,6 +1,6 @@
 .templete {
-    max-height: 100vh;
-    background-color: rgb(231, 225, 225);
+    height: 100vh;
+    background-color: rgb(64, 205, 230);
     padding-top: 25px;
     margin: 0 auto;
     max-width: 520px;
@@ -9,7 +9,7 @@
 .title {
     text-align: center;
     margin: auto;
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 20px;
 }
 
@@ -24,3 +24,4 @@
     text-align: center;
     padding-bottom: 50px;
 }
+

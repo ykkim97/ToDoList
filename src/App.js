@@ -1,5 +1,7 @@
 import { useState } from 'react';
+import { MdAddCircle } from 'react-icons/md';
 import './App.css';
+import ToDoInput from './components/ToDoInput';
 import ToDoList from './components/ToDoList';
 import ToDoTemplete from './components/ToDoTemplete';
 
@@ -21,11 +23,19 @@ function App() {
       isChecked : true
     },
   ]);
+  const [inputToggle, setInputToggle] = useState(false);
 
+  const onInputToggle = () => {
+    setInputToggle(prev => !prev);
+  }
 
   return (
       <ToDoTemplete>
         <ToDoList todos={todos} />
+        <div className='add-todo'>
+          <MdAddCircle onClick={onInputToggle}/>
+        </div>
+        {inputToggle ? <ToDoInput onInputToggle={onInputToggle} /> : ""}
       </ToDoTemplete>
   );
 }
